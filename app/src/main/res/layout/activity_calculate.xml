@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.CalculateActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="50dp">
+
+        <EditText
+            android:id="@+id/value_left_TV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:lines="1"
+            android:maxLength="8"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:text="1000.5"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/value_TV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:lines="1"
+
+            android:inputType="number"
+            android:gravity="center"
+            android:text="2000.2"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="50dp">
+
+        <TextView
+            android:id="@+id/valute_left_TV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="RU"
+            android:layout_weight="1"
+
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+
+            android:id="@+id/valute_right_TV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="USD"
+            android:layout_weight="1"
+
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:layout_editor_absoluteX="50dp">
+
+        <TextView
+            android:id="@+id/change_valute_left_TV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="@string/change_valute"
+            android:textColor="@color/purple_700"
+            android:maxLines="2"
+
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/change_valute_right_TV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="@string/change_valute"
+            android:textColor="@color/purple_700"
+            android:maxLines="2"
+
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

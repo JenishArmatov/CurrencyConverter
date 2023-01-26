@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Конвертор Валюты</string>
+    <string name="change_valute">Изменить валюту</string>
+    <string name="choose_valute">Выбор валюты</string>
+    <string name="check_internet_connection">Для работы приложения, необходимо интернет подключение!</string>
+    <string name="fail_connection">Отсутствует подключение!</string>
+    <string name="ok">Понятно</string>
+
+</resources>
