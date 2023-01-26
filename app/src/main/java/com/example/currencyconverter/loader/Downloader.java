@@ -37,8 +37,10 @@ public class Downloader {
 
 
     public Downloader(Activity activity){
+
         this.activity = (MainActivity) activity;
         init();
+
     }
     private void init(){
 
@@ -132,18 +134,31 @@ public class Downloader {
         }
 
         private XmlPullParser tryDownloadingXmlData(String url) {
+
             try {
+
                 Log.i(TAG, "Now downloading...");
+
                 URL xmlUrl = new URL(url);
+
                 XmlPullParser receivedData = XmlPullParserFactory.newInstance().newPullParser();
+
                 receivedData.setInput(xmlUrl.openStream(), null);
+
                 return receivedData;
+
             } catch (XmlPullParserException e) {
+
                 Log.e(TAG, "XmlPullParserExecption", e);
+
             } catch (IOException e) {
+
                 Log.e(TAG, "XmlPullParserExecption", e);
+
             }
+
             return null;
+            
         }
 
     }
